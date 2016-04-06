@@ -1,0 +1,21 @@
+@import "../../base/fn"
+
+
+.panel
+	width 100%
+	padding panelPadding
+	background-color panelBgColor
+	border-radius panelBorderRadius
+	display:block
+	box-sizing border-box
+	overflow hidden
+
+.panel + .panel
+	margin-top panelMarginTop
+
+.panel-inline
+	width auto
+	display inline-block
+	margin-left panelMarginLeft
+	margin-top auto
+	

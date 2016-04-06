@@ -1,0 +1,25 @@
+@import "../../base/fn"
+
+
+.tab
+	width 100%
+	height tabHeight
+	box-sizing border-box
+	overflow hidden
+	display flex
+	align-items center
+	.item
+		flex 1
+		height tabHeight
+		line-height @height
+		box-sizing border-box
+		width auto
+		text-align center
+		background-color navBgColor
+		border-bottom navBotBdHeight solid navBotBdColor
+		font-size navFontSize
+		color navFontColor
+	.item-on
+		background-color navOnBgColor
+		border-bottom navOnBotBdHeight solid navOnBotBdColor
+		color navOnFontColor

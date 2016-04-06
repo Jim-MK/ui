@@ -1,0 +1,33 @@
+@import "../../base/fn"
+
+.btn
+	&.btn-mini
+		line-height btnMiniHeight
+		font-size btnMiniFontSize
+		padding 0 0.75em
+		display inline-block
+
+button,input
+	&.btn
+		width 100%
+		border-width 0
+		outline 0
+		-webkit-appearance none
+		&:focus
+			outline 0
+		&.btn-inline,&.btn-mini
+			width auto
+
+/*btn间隙*/
+.btn + .btn
+	margin-top btnDefaultGap
+
+.btn.btn-mini,.btn.btn-inline
+	margin-top auto
+	margin-left btnDefaultGap
+
+@import 'ui_btn_global.styl'
+@import 'ui_btn_default.styl'
+@import 'ui_btn_disabled.styl'
+@import 'ui_btn_primary.styl'
+@import 'ui_btn_warn.styl'
