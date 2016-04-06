@@ -9,3 +9,5 @@
 ## 文档目录
 ## 文档规范
 ## 文档demo
+* button
+* dialog
