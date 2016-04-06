@@ -1,0 +1,87 @@
+@import '../stylus/base/basic.styl'
+
+body
+	background-color #f5f5f5
+	font-size 62.5%
+	
+header,footer,.content
+	absolute left right
+	width 100%
+	
+header,footer
+	z-index 900	
+	
+footer
+	bottom 0
+	border-top: 1px solid #fbc8b2
+
+header
+	top 0
+	.tab
+		.item,.item-on
+			border-bottom none
+			width:0.4rem
+	.underline
+		height 0.2rem
+		widht 100%
+		background-color #fff
+		.active
+			width 50%
+			height 100%
+			position relative
+			left 50%
+			background-color #fbc9b2
+
+.content 
+	top 4.4rem
+	bottom 4.4rem
+	overflow-y auto
+	-webkit-overflow-scrolling:touch;
+	.wrap
+		padding 2rem 4rem 5rem 4rem
+		box-sizing border-box;
+		.panel
+			position relative
+			left -150%
+			/*为每一个panel添加动画*/
+			for num in 1 2 3 4 5 6 7 8
+				&:nth-child({num})
+					animation panelMove 2s unit(num*0.2,'s')
+					-webkit-animation-fill-mode:forwards;
+			.cont,.icon
+				display inline-block
+			.cont
+				width 80%
+				border-right 1px solid #f5f5f5
+				.date,.status
+					font-size 1.2rem
+					color #bababa
+				.tit
+					font-size 1.4rem
+
+
+/*动画*/
+/*border-move*/
+@keyframes border-move
+	0%
+		left 50%
+	50%
+		left 0
+	100%
+		left 50%
+
+@keyframes border-moveOut
+	0%
+		left 50%
+	100%
+		left 0
+
+@keyframes panelMove
+	0%
+		left -150%
+	100%
+		left 0
+
+.underMove
+	animation border-move 2s 10
+	-webkit-animation-fill-mode:forwards;

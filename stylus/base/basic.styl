@@ -1,0 +1,53 @@
+/*
+	decp:保存css中基本属性，例如position/absolute/fixed/
+	date:2016/4/1
+	author:makai
+*/
+
+
+//定位
+-pos(type, args)
+  i = 0
+  position: unquote(type)
+  {args[i]}: args[i + 1] is a 'unit' ? args[i += 1] : 0
+  {args[i += 1]}: args[i + 1] is a 'unit' ? args[i += 1] : 0
+
+absolute()
+  -pos('absolute', arguments)
+
+fixed()
+  -pos('fixed', arguments)
+
+
+//含有私有属性的CSS3标签
+vendor(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  -ms-{prop} args
+  -o-{prop} args
+  {prop} args
+  
+border-radius()
+	vendor('border-radius',arguments)
+
+box-shadow()
+ 	vendor('box-shadow', arguments)
+ 	
+
+flex()
+  -moz-box-flex: arguments;
+  -webkit-box-flex: arguments;
+  -o-box-flex: arguments;
+  -ms-flex: arguments;
+  flex: arguments;
+
+
+display()
+  if arguments is flex
+    display -webkit-box
+    display -moz-box
+    display -o-box
+    display -ms-flexbox
+    display flex
+  else 
+    display arguments

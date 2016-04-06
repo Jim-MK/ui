@@ -1,0 +1,217 @@
+body {
+  background-color: #f5f5f5;
+  font-size: 62.5%;
+}
+header,
+footer,
+.content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+header,
+footer {
+  z-index: 900;
+}
+footer {
+  bottom: 0;
+  border-top: 1px solid #fbc8b2;
+}
+header {
+  top: 0;
+}
+header .tab .item,
+header .tab .item-on {
+  border-bottom: none;
+  width: 0.4rem;
+}
+header .underline {
+  height: 0.2rem;
+  widht: 100%;
+  background-color: #fff;
+}
+header .underline .active {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  left: 50%;
+  background-color: #fbc9b2;
+}
+.content {
+  top: 4.4rem;
+  bottom: 4.4rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.content .wrap {
+  padding: 2rem 4rem 5rem 4rem;
+  box-sizing: border-box;
+}
+.content .wrap .panel {
+  position: relative;
+  left: -150%;
+/*为每一个panel添加动画*/
+}
+.content .wrap .panel:nth-child(1) {
+  animation: panelMove 2s 0.2s;
+  -webkit-animation-fill-mode: forwards;
+}
+.content .wrap .panel:nth-child(2) {
+  animation: panelMove 2s 0.4s;
+  -webkit-animation-fill-mode: forwards;
+}
+.content .wrap .panel:nth-child(3) {
+  animation: panelMove 2s 0.6s;
+  -webkit-animation-fill-mode: forwards;
+}
+.content .wrap .panel:nth-child(4) {
+  animation: panelMove 2s 0.8s;
+  -webkit-animation-fill-mode: forwards;
+}
+.content .wrap .panel:nth-child(5) {
+  animation: panelMove 2s 1s;
+  -webkit-animation-fill-mode: forwards;
+}
+.content .wrap .panel:nth-child(6) {
+  animation: panelMove 2s 1.2s;
+  -webkit-animation-fill-mode: forwards;
+}
+.content .wrap .panel:nth-child(7) {
+  animation: panelMove 2s 1.4s;
+  -webkit-animation-fill-mode: forwards;
+}
+.content .wrap .panel:nth-child(8) {
+  animation: panelMove 2s 1.6s;
+  -webkit-animation-fill-mode: forwards;
+}
+.content .wrap .panel .cont,
+.content .wrap .panel .icon {
+  display: inline-block;
+}
+.content .wrap .panel .cont {
+  width: 80%;
+  border-right: 1px solid #f5f5f5;
+}
+.content .wrap .panel .cont .date,
+.content .wrap .panel .cont .status {
+  font-size: 1.2rem;
+  color: #bababa;
+}
+.content .wrap .panel .cont .tit {
+  font-size: 1.4rem;
+}
+/*动画*/
+/*border-move*/
+.underMove {
+  animation: border-move 2s 10;
+  -webkit-animation-fill-mode: forwards;
+}
+@-moz-keyframes border-move {
+  0% {
+    left: 50%;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 50%;
+  }
+}
+@-webkit-keyframes border-move {
+  0% {
+    left: 50%;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 50%;
+  }
+}
+@-o-keyframes border-move {
+  0% {
+    left: 50%;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 50%;
+  }
+}
+@keyframes border-move {
+  0% {
+    left: 50%;
+  }
+  50% {
+    left: 0;
+  }
+  100% {
+    left: 50%;
+  }
+}
+@-moz-keyframes border-moveOut {
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes border-moveOut {
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-o-keyframes border-moveOut {
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes border-moveOut {
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-moz-keyframes panelMove {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes panelMove {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@-o-keyframes panelMove {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes panelMove {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 0;
+  }
+}

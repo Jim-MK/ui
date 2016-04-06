@@ -1,0 +1,36 @@
+.btn {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.4rem
+  padding-right: 1.4rem;
+  box-sizing: border-box;
+  font-size: 1.8rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  line-height: 2.333333333333333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.btn:after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(0,0,0,0.2);
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  box-sizing: border-box;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.btn.btn-inline {
+  display: inline-block;
+}
