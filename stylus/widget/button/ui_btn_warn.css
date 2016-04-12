@@ -1,0 +1,9 @@
+.btn-warn {
+  background-color: #ef4f4f;
+}
+.btn-warn:visit {
+  color: #fa7e47;
+}
+.btn-warn:active {
+  background-color: #c13e3e;
+}

@@ -1,0 +1,11 @@
+.btn-default {
+  background-color: #f7f7f7;
+  color: #454545;
+}
+.btn-default:visited {
+  color: #454545;
+}
+.btn-default.active {
+  color: #a1a1a1;
+  background-color: #dedede;
+}

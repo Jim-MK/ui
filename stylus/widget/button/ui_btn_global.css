@@ -3,17 +3,19 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.4rem
+  padding-left: 1.4rem;
   padding-right: 1.4rem;
   box-sizing: border-box;
   font-size: 1.8rem;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: #fa7e47;
   line-height: 2.333333333333333;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 .btn:after {
@@ -27,9 +29,11 @@
   transform: scale(0.5);
   transform-origin: 0 0;
   box-sizing: border-box;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
 }
 .btn.btn-inline {
   display: inline-block;

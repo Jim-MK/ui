@@ -1,0 +1,15 @@
+.ui-textarea {
+  display: block;
+  border: 0;
+  resize: none;
+  width: 100%;
+  color: inherit;
+  font-size: 1em;
+  line-height: inherit;
+  outline: 0;
+}
+.ui-input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+}

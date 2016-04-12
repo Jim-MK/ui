@@ -1,0 +1,10 @@
+.btn-primary {
+  background-color: #fff;
+}
+.btn-primary:visited {
+  color: #fa7e47;
+}
+.btn-primary:active {
+  color: rgba(255,255,255,0.4);
+  background-color: #039702;
+}

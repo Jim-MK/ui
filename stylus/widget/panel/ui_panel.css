@@ -1,0 +1,22 @@
+.panel {
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  border-radius: 0.5rem;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.panel + .panel {
+  margin-top: 2rem;
+}
+.panel-inline {
+  width: auto;
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-top: auto;
+}

@@ -1,0 +1,17 @@
+@import "../../base/fn"
+
+.cells-access
+	setTapColor()
+	&.active
+		background-color #ECECEC
+	a.cell
+		color inherit
+	.cell_ft
+		&:after
+			content ''
+			top -1px
+			margin-left .3em
+			transform rotate(45deg)
+			border-width 2px 2px 0 0
+			border-color #C8C8CD
+			border-style solid
