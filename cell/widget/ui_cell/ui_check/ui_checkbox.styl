@@ -1,0 +1,34 @@
+@import "../../../base/fn"
+
+.ui_cells_checkbox
+    .ui_cell_hd
+        padding-right: uiCellInnerGapH
+
+    .ui_cell
+        &:active
+            background-color: #ECECEC
+
+
+    .ui_icon_checked
+        &:before
+            content: '\EA01'
+            color: #C9C9C9
+            font-size: 23px
+            display: block
+
+
+
+
+// method2 accessbility
+.ui_check
+    // checkbox
+    .ui_cells_checkbox &
+        &:checked
+            & + .ui_icon_checked
+                &:before
+                    content: '\EA06'
+                    color: #09BB07
+
+
+
+

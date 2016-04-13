@@ -1,0 +1,66 @@
+@import "../../base/fn"
+
+.ui_cell
+    // onepx
+    position relative
+    &:before
+        setTopLine(uiCellBorderColor)
+        left uiCellGapH
+
+    &:first-child
+        &:before
+            display none
+
+
+
+
+.ui_cells
+    margin-top uiCellsMarginTop
+    background-color uiCellBg
+    line-height uiCellLineHeight
+    font-size uiCellFontSize //cell中间有效高度23px，跟客户端默认图标尺寸一致
+    overflow hidden //因为每个cell的border使用before元素left搞的，ie下伪元素的containing block估计跟标准不同，在cell上用oh不生效
+    // onepx
+    position relative
+    &:before
+        setTopLine(uiCellBorderColor)
+    &:after
+        setBottomLine(uiCellBorderColor)
+
+
+
+.ui_cells_title
+    margin-top .77em // 15px - 行高
+    margin-bottom .3em // 8px - 行高
+    padding-left uiCellGapH
+    padding-right uiCellGapH
+    color globalTextColor
+    font-size uiCellTipsFontSize
+
+    & + .ui_cells
+        margin-top 0
+
+
+
+.ui_cells_tips
+    margin-top .3em // 8px - 行高
+    color globalTextColor
+    padding-left uiCellGapH
+    padding-right uiCellGapH
+    font-size uiCellTipsFontSize
+
+
+.ui_cell
+    padding uiCellGapV uiCellGapH
+    position relative //这个是为了兼容cells容器onepx方案被before挡住而做的
+    display flex
+    align-items center
+
+
+.ui_cell_ft
+    text-align right
+    color globalTextColor
+
+
+.ui_cell_primary
+    flex 1

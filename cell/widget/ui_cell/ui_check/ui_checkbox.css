@@ -1,0 +1,16 @@
+.ui_cells_checkbox .ui_cell_hd {
+  padding-right: 0.35em;
+}
+.ui_cells_checkbox .ui_cell:active {
+  background-color: #ececec;
+}
+.ui_cells_checkbox .ui_icon_checked:before {
+  content: '\EA01';
+  color: #c9c9c9;
+  font-size: 23px;
+  display: block;
+}
+.ui_cells_checkbox .ui_check:checked + .ui_icon_checked:before {
+  content: '\EA06';
+  color: #09bb07;
+}

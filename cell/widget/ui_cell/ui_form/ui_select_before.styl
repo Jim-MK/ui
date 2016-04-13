@@ -1,0 +1,22 @@
+@import "../../../base/fn"
+@import "./ui_select"
+
+.ui_select_before
+    padding-right uiCellGapH
+    .ui_cell_hd
+        position relative
+        &:after
+            setRightLine(uiCellBorderColor)
+        &:before
+            content " "
+            setArrow_Wap(right, 6px, #C8C8CD, 2px)
+            position  absolute
+            top  50%
+            right  uiCellGapH
+            margin-top  -3px
+    .ui_cell_bd
+        padding-left uiCellGapH
+        &:after
+            display none
+
+

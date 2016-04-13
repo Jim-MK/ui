@@ -1,0 +1,69 @@
+.ui_label {
+  display: block;
+  width: 3em;
+}
+.ui_input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  background-color: transparent;
+  font-size: inherit;
+  color: inherit;
+  height: 24px;
+  line-height: 24px;
+}
+.ui_input-webkit-outer-spin-button,
+.ui_input-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.ui_textarea {
+  display: block;
+  border: 0;
+  resize: none;
+  width: 100%;
+  color: inherit;
+  font-size: 1em;
+  line-height: inherit;
+  outline: 0;
+}
+.ui_textarea_counter {
+  color: #b2b2b2;
+  text-align: right;
+}
+.ui_cell_warn .ui_textarea_counter {
+  color: #e64340;
+}
+.ui_toptips {
+  display: none;
+  position: fixed;
+  -webkit-transform: translateZ(0);
+  width: 100%;
+  top: 0;
+  line-height: 2.3;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+.ui_toptips.ui_warn {
+  background-color: #e64340;
+}
+.ui_cells_form .ui_cell_warn {
+  color: #e64340;
+}
+.ui_cells_form .ui_cell_warn .ui_icon_warn {
+  display: inline-block;
+}
+.ui_cells_form .ui_cell_hd {
+  padding-right: 0.3em;
+}
+.ui_cells_form .ui_icon_warn {
+  display: none;
+}
+.ui_cells_form input,
+.ui_cells_form textarea,
+.ui_cells_form label {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}

@@ -1,0 +1,98 @@
+// css2 arrow
+arrow(borderWidth, borderColor)
+    setArrowWidth(borderWidth)
+    setArrowColor(borderColor)
+
+
+setArrowColor(borderColor)
+    &.arrow_t
+        border-bottom-color borderColor
+
+    &.arrow_r
+        border-left-color borderColor
+
+    &.arrow_b
+        border-top-color borderColor
+
+    &.arrow_l
+        border-right-color borderColor
+
+
+
+setArrowWidth(borderWidth)
+    border-width borderWidth
+
+setArrow(direction, borderWidth, borderColor)
+  display inline-block
+  width 0
+  height 0
+  border-width borderWidth
+  border-style dashed
+  border-color transparent
+  if (direction == top)
+    arrow_t(borderColor)
+  else if (direction == right)
+    arrow_r(borderColor)
+  else if (direction == bottom)
+    arrow_b(borderColor)
+  else if (direction == left)
+    arrow_l(borderColor)
+
+arrow_t(c)
+    border-top-width 0
+    border-bottom-color c
+    border-bottom-style solid
+
+
+arrow_r(c)
+    border-right-width 0
+    border-left-color c
+    border-left-style solid
+
+
+arrow_b(c)
+    border-bottom-width 0
+    border-top-color c
+    border-top-style solid
+
+
+arrow_l(c)
+    border-left-width 0
+    border-right-color c
+    border-right-style solid
+
+
+// css3 arrow
+setArrowWidth_Wap(borderWidth)
+    border-width borderWidth borderWidth 0 0
+
+
+setArrowSize_Wap(arrowsize)
+    height arrowsize
+    width arrowsize
+
+
+setArrow_Wap(direction, arrowsize, borderColor,borderWidth)
+    display inline-block
+    setArrowSize_Wap(arrowsize)
+    setArrowWidth_Wap(borderWidth)
+    border-color borderColor
+    border-style solid
+
+    if (direction == top)
+      transform translate(0, 0) rotate(-45deg)
+    else if (direction == right)
+      transform rotate(45deg)
+      position relative
+      top -2px
+    else if (direction == left)
+      transform rotate(-135deg)
+      position relative
+      top -2px
+    else if (direction == down)
+      transform rotate(135deg)
+      position relative
+      top -3px
+
+
+

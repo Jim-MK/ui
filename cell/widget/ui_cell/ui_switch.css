@@ -1,0 +1,48 @@
+.ui_cell_switch {
+  padding-top: 12px/2;
+  padding-bottom: 12px/2;
+}
+.ui_switch {
+  appearance: none;
+  position: relative;
+  width: 52px;
+  height: 32px;
+  border: 1px solid #dfdfdf;
+  outline: 0;
+  border-radius: 16px;
+  box-sizing: border-box;
+  background: #dfdfdf;
+}
+.ui_switch:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #fdfdfd;
+  transition: transform 0.3s;
+}
+.ui_switch:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+  transition: transform 0.3s;
+}
+.ui_switch:checked {
+  border-color: #04be02;
+  background-color: #04be02;
+}
+.ui_switch:checked:before {
+  transform: scale(0);
+}
+.ui_switch:checked:after {
+  transform: translateX(20px);
+}

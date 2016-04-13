@@ -1,0 +1,12 @@
+.ui_cells_radio .ui_cell_ft {
+  padding-left: 0.35em;
+}
+.ui_cells_radio .ui_cell:active {
+  background-color: #ececec;
+}
+.ui_cells_radio .ui_check:checked + .ui_icon_checked:before {
+  display: block;
+  content: '\EA08';
+  color: #09bb07;
+  font-size: 16px;
+}
