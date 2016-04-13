@@ -1,49 +1,57 @@
 @import "../../base/fn";
 
 
-.cell
-	//onepx
-	position relative
-	&:before
-		setTopLine(cellBorderColor)
-		left cellGapH;
-	&:first-child
-		&.before
-			display none
+.ui-cell
+  padding cellGapV cellGapH
+  display flex
+  align-items center
+  //onepx
+  position relative
+  &:before
+    setTopLine(cellBorderColor)
+    left cellGapH
+  &:first-child
+    &:before
+      display none
 
-.cells
-	margin-top cellsMarginTop;
-	background-color cellBg;
-	line-height cellLineHeight;
-	font-size cellFontSize;
-	overflow hidden
-	//onepx
-	position relative
-	&:before
-		setTopLine(cellBorderColor)
-	&:after
-		setBottomLine(cellBorderColor)
 
-.cells-title
+.ui-cells
+  margin-top cellsMarginTop
+  background-color cellBg
+  line-height cellLineHeight
+  font-size cellFontSize
+  overflow hidden
+  //onepx
+  position relative
+  &:before
+      setTopLine(cellBorderColor)
+  &:after
+      setBottomLine(cellBorderColor)
+
+.ui-cells-title
 	margin-top .77em
 	margin-bottom .3em
 	padding-left cellGapH
 	padding-right cellGapH
 	font-size cellTipsFontSize
 	color globalTextColor
+	
+	& + .ui-cells
+		margin-top 0
 
-.cells-tips
+//bottom inf
+.ui-cells-tips
 	margin-top .3em
 	color globalTextColor
 	padding-left cellGapH
 	padding-right cellGapH
 	font-size cellTipsFontSize
 
-.cell-ft
-	text-algin right
+.ui-cell-ft
+	text-align right
 	color globalTextColor
 
-.cell-primary
+.ui-cell-primary
 	flex 1
 	
 	

@@ -1,28 +1,28 @@
 @import "../../base/fn"
 
-.btn
-	&.btn-mini
+.ui-btn
+	&.ui-btn-mini
 		line-height btnMiniHeight
 		font-size btnMiniFontSize
 		padding 0 0.75em
 		display inline-block
 
 button,input
-	&.btn
+	&.ui-btn
 		width 100%
 		border-width 0
 		outline 0
 		-webkit-appearance none
 		&:focus
 			outline 0
-		&.btn-inline,&.btn-mini
+		&.ui-btn-inline,&.ui-btn-mini
 			width auto
 
 /*btn间隙*/
-.btn + .btn
+.ui-btn + .ui-btn
 	margin-top btnDefaultGap
 
-.btn.btn-mini,.btn.btn-inline
+.ui-btn.ui-btn-mini,.ui-btn.ui-btn-inline
 	margin-top auto
 	margin-left btnDefaultGap
 

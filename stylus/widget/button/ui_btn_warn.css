@@ -1,9 +1,9 @@
-.btn-warn {
+.ui-btn-warn {
   background-color: #ef4f4f;
 }
-.btn-warn:visit {
+.ui-btn-warn:visit {
   color: #fa7e47;
 }
-.btn-warn:active {
+.ui-btn-warn:active {
   background-color: #c13e3e;
 }

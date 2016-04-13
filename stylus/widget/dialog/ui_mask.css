@@ -1,52 +1,4 @@
-.setTopLine(lineColor) {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  border-top: 1px solid lineColor;
-  transform-origin: 0 0;
-  transform: scaleY(0.5);
-  color: lineColor;
-}
-.setBottomLine(lineColor) {
-  content: ' ';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  border-bottom: 1px solid lineColor;
-  transform-origin: 0 0;
-  transform: scaleY(0.5);
-  color: lineColor;
-}
-.setLeftLine(lineColor) {
-  content: ' ';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1px;
-  height: 100%;
-  border-left: 1px solid lineColor;
-  transform-origin: 0 0;
-  transform: scaleX(0.5);
-  color: lineColor;
-}
-.setRightLine(lineColor) {
-  content: ' ';
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 1px;
-  height: 100%;
-  border-right: 1px solid lineColor;
-  transform-origin: 0 0;
-  transform: scaleX(0.5);
-  color: lineColor;
-}
-.mask {
+.ui-mask {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -55,6 +7,6 @@
   z-index: 999;
   background-color: rgba(0,0,0,0.6);
 }
-.mask-transparent {
+.ui-mask-transparent {
   background-color: rgba(0,0,0,0);
 }

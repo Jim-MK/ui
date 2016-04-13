@@ -1,36 +1,36 @@
-.btn.btn-mini {
+.ui-btn.ui-btn-mini {
   line-height: 1.9;
   font-size: 1.4rem;
   padding: 0 0.75em;
   display: inline-block;
 }
-button.btn,
-input.btn {
+button.ui-btn,
+input.ui-btn {
   width: 100%;
   border-width: 0;
   outline: 0;
   -webkit-appearance: none;
 }
-button.btn:focus,
-input.btn:focus {
+button.ui-btn:focus,
+input.ui-btn:focus {
   outline: 0;
 }
-button.btn.btn-inline,
-input.btn.btn-inline,
-button.btn.btn-mini,
-input.btn.btn-mini {
+button.ui-btn.ui-btn-inline,
+input.ui-btn.ui-btn-inline,
+button.ui-btn.ui-btn-mini,
+input.ui-btn.ui-btn-mini {
   width: auto;
 }
 /*btn间隙*/
-.btn + .btn {
+.ui-btn + .ui-btn {
   margin-top: 1.5rem;
 }
-.btn.btn-mini,
-.btn.btn-inline {
+.ui-btn.ui-btn-mini,
+.ui-btn.ui-btn-inline {
   margin-top: auto;
   margin-left: 1.5rem;
 }
-.btn {
+.ui-btn {
   position: relative;
   display: block;
   margin-left: auto;
@@ -48,9 +48,10 @@ input.btn.btn-mini {
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
+  -webkit-tap-highlight-color: rgba(0,0,0,0.1);
   overflow: hidden;
 }
-.btn:after {
+.ui-btn:after {
   content: " ";
   width: 200%;
   height: 200%;
@@ -67,42 +68,42 @@ input.btn.btn-mini {
   -o-border-radius: 1rem;
   border-radius: 1rem;
 }
-.btn.btn-inline {
+.ui-btn.ui-btn-inline {
   display: inline-block;
 }
-.btn-default {
+.ui-btn-default {
   background-color: #f7f7f7;
   color: #454545;
 }
-.btn-default:visited {
+.ui-btn-default:visited {
   color: #454545;
 }
-.btn-default.active {
+.ui-btn-default.active {
   color: #a1a1a1;
   background-color: #dedede;
 }
-.btn-disabled {
+.ui-btn-disabled {
   color: rgba(255,255,255,0.6);
 }
-.btn-disabled.btn-default {
+.ui-btn-disabled.ui-btn-default {
   color: #c9c9c9;
 }
-.btn-primary {
+.ui-btn-primary {
   background-color: #fff;
 }
-.btn-primary:visited {
+.ui-btn-primary:visited {
   color: #fa7e47;
 }
-.btn-primary:active {
+.ui-btn-primary:active {
   color: rgba(255,255,255,0.4);
   background-color: #039702;
 }
-.btn-warn {
+.ui-btn-warn {
   background-color: #ef4f4f;
 }
-.btn-warn:visit {
+.ui-btn-warn:visit {
   color: #fa7e47;
 }
-.btn-warn:active {
+.ui-btn-warn:active {
   background-color: #c13e3e;
 }

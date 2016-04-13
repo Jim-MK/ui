@@ -1,6 +1,6 @@
 @import "../../base/fn"
 
-.dialog
+.ui-dialog
   absolute top 50% left 50%
   transform translate(-50%,-50%)
   width 80%
@@ -8,19 +8,19 @@
   background-color dialogBgColor
   text-align center
   border-radius 3px
-  .dialog-hd
+  .ui-dialog-hd
       padding 1.2em 0 .5em
       font-size 1.6rem
       font-weight 400
       color dialogHdFontColor
-  .dialog-bd
+  .ui-dialog-bd
       padding 5px 2rem
       font-size 1.5rem
       color dialogBdFontColor
-  .dialog-ft
+  .ui-dialog-ft
     border-top 1px solid #ccc
     display flex
-    .btn-dialog
+    .ui-btn-dialog
       flex 1
       text-align center
       font-size 1.6rem
@@ -32,16 +32,16 @@
     .primary
       color dialogPrimaryFontColor
 //confirm
-.dialog-confirm
-  .dialog
-    .dialog-hd
+.ui-dialog-confirm
+  .ui-dialog
+    .ui-dialog-hd
       padding 1.2em 20px .5em
-    .dialog-bd
+    .ui-dialog-bd
       text-align left
 //alert
-.dialog-alert
-  .dialog
-    .dialog-hd
+.ui-dialog-alert
+  .ui-dialog
+    .ui-dialog-hd
       padding 1.2em 20px .5em
-    .dialog-bd
+    .ui-dialog-bd
       text-align center

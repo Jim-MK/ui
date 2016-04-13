@@ -1,4 +1,4 @@
-.btn {
+.ui-btn {
   position: relative;
   display: block;
   margin-left: auto;
@@ -16,9 +16,10 @@
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
   border-radius: 0.5rem;
+  -webkit-tap-highlight-color: rgba(0,0,0,0.1);
   overflow: hidden;
 }
-.btn:after {
+.ui-btn:after {
   content: " ";
   width: 200%;
   height: 200%;
@@ -35,6 +36,6 @@
   -o-border-radius: 1rem;
   border-radius: 1rem;
 }
-.btn.btn-inline {
+.ui-btn.ui-btn-inline {
   display: inline-block;
 }
